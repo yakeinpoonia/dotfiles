@@ -1,0 +1,65 @@
+binds {
+	// Basic Binds
+	Mod+Q repeat=false { close-window; }
+	Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
+	Alt+Space hotkey-overlay-title="Application Launcher" { spawn "walker"; }
+	Mod+O hotkey-overlay-title="Toggle Overview" repeat=false { toggle-overview; }
+	Mod+Shift+F { fullscreen-window; }
+	Mod+Shift+N hotkey-overlay-title="Notepad: Toggle" { spawn "dms" "ipc" "call" "notepad" "toggle"; }		
+
+	// Function key shortcuts binds
+	XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "3"; }
+	XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "3"; }
+	XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "5" ""; }
+	XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "5" ""; }
+	XF86AudioMicMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
+	XF86AudioMute allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
+
+	// Mouse Bindings
+	Mod+WheelScrollDown cooldown-ms=150 { focus-workspace-down; }
+	Mod+WheelScrollUp   cooldown-ms=150 { focus-workspace-up; }
+	Mod+MouseForward                { focus-column-right; }
+	Mod+MouseBack                 { focus-column-left; }
+
+	// Moving column
+	Mod+C { center-column; }
+	Mod+F { maximize-column; }
+
+
+	// Workspace focus
+	Mod+I { focus-workspace-up; }
+	Mod+U { focus-workspace-down; }
+
+	// Window focus
+	Mod+H { focus-column-left; }
+	Mod+J { focus-window-down; }
+	Mod+K { focus-window-up; }
+	Mod+L { focus-column-right; }
+
+	// Window and column movement
+	Mod+Shift+BracketLeft { consume-or-expel-window-left; }
+	Mod+Shift+BracketRight { consume-or-expel-window-right; }
+	Mod+Shift+H { move-column-left; }
+	Mod+Shift+L { move-column-right; }
+	Mod+Shift+K { move-window-up; }
+	Mod+Shift+J { move-window-down; }
+	Mod+Shift+I cooldown-ms=150 { move-column-to-workspace-up; }
+	Mod+Shift+U cooldown-ms=150 { move-column-to-workspace-down; }
+
+	// Window resize
+	Mod+Equal { set-column-width "+10%"; }
+	Mod+Minus { set-column-width "-10%"; }
+	Mod+Shift+Equal { set-window-height "+10%"; }
+	Mod+Shift+Minus { set-window-height "-10%"; }
+	
+
+	// Floating Window
+	Mod+Shift+space { toggle-window-floating; }
+
+	// Monitor focus
+	Mod+semicolon { focus-monitor-next; }
+
+	// Screenshot shortcut
+	Print { screenshot; }
+
+}
