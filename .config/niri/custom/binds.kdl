@@ -2,10 +2,11 @@ binds {
 	// Basic Binds
 	Mod+Q repeat=false { close-window; }
 	Mod+Return hotkey-overlay-title="Open Terminal" { spawn "kitty"; }
-	Alt+Space hotkey-overlay-title="Application Launcher" { spawn "walker"; }
+	Mod+Space hotkey-overlay-title="Application Launcher" { spawn "walker"; }
 	Mod+O hotkey-overlay-title="Toggle Overview" repeat=false { toggle-overview; }
 	Mod+Shift+F { fullscreen-window; }
-	Mod+Shift+N hotkey-overlay-title="Notepad: Toggle" { spawn "dms" "ipc" "call" "notepad" "toggle"; }		
+	Mod+Shift+N hotkey-overlay-title="Notepad: Toggle" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+	Mod+v hotkey-overlay-title="Clipboard" { spawn "walker" "-m" "clipboard"; }
 
 	// Function key shortcuts binds
 	XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "3"; }
