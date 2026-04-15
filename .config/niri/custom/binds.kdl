@@ -44,8 +44,8 @@ binds {
 	Mod+Shift+L { move-column-right; }
 	Mod+Shift+K { move-window-up; }
 	Mod+Shift+J { move-window-down; }
-	Mod+Shift+I cooldown-ms=150 { move-column-to-workspace-up; }
-	Mod+Shift+U cooldown-ms=150 { move-column-to-workspace-down; }
+	Mod+Shift+U cooldown-ms=150 { move-column-to-workspace-up; }
+	Mod+Shift+I cooldown-ms=150 { move-column-to-workspace-down; }
 
 	// Window resize
 	Mod+Equal { set-column-width "+10%"; }
