@@ -180,6 +180,13 @@ layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
 }
+
+// layer rule for overview customization 
+layer-rule {
+    match namespace="^awww-daemon$"
+    place-within-backdrop true
+}
+
 overview {
     workspace-shadow {
         off
