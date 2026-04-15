@@ -46,6 +46,7 @@ binds {
 	Mod+Shift+J { move-window-down; }
 	Mod+Shift+U cooldown-ms=150 { move-column-to-workspace-up; }
 	Mod+Shift+I cooldown-ms=150 { move-column-to-workspace-down; }
+	Mod+Shift+Semicolon { move-column-to-monitor-next; }
 
 	// Window resize
 	Mod+Equal { set-column-width "+10%"; }
@@ -58,7 +59,7 @@ binds {
 	Mod+Shift+space { toggle-window-floating; }
 
 	// Monitor focus
-	Mod+semicolon { focus-monitor-next; }
+	Mod+Semicolon { focus-monitor-next; }
 
 	// Screenshot shortcut
 	Print { screenshot; }
