@@ -28,8 +28,8 @@ binds {
 
 
 	// Workspace focus
-	Mod+I { focus-workspace-up; }
-	Mod+U { focus-workspace-down; }
+	Mod+I { focus-workspace-down; }
+	Mod+U { focus-workspace-up; }
 
 	// Window focus
 	Mod+H { focus-column-left; }
