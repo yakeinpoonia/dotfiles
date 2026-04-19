@@ -1,3 +1,4 @@
+spawn-at-startup "systemctl" "--user" "start" "elephant.service"
 spawn-at-startup "awww-daemon"
 spawn-at-startup "awww" "restore"
 spawn-at-startup "walker" "--gapplication-service"
