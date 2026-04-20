@@ -197,9 +197,7 @@ overview {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 // This line starts waybar, a commonly used bar for Wayland compositors.
-environment {
-  XDG_CURRENT_DESKTOP "niri"
-}
+
 hotkey-overlay {
     skip-at-startup
 }
@@ -312,4 +310,5 @@ recent-windows {
 // Custom kdl files
 include "custom/binds.kdl"
 include "custom/startup.kdl"
+include "custom/environment.kdl"
 include "./colors.kdl"

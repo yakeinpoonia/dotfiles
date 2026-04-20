@@ -1,0 +1,4 @@
+environment {                                                                                                                                               
+  XDG_CURRENT_DESKTOP "niri"
+  QT_STYLE_OVERRIDE "kvantum"
+}  
